@@ -11,7 +11,8 @@
 </head>
 
 <body>
-  <?php
+  <div class="wrapper">
+    <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' 
         && !empty($_POST['number'])
         && isset($_POST['randcheck']) && isset($_SESSION['rand']) && $_POST['randcheck'] == $_SESSION['rand']) {
@@ -31,24 +32,26 @@
     include_once ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'header.html';    
   ?>
 
-  <main class="main">
-    <h1 class="visually-hidden">Производство и монтаж заборов, ворот, калиток, навесов, беседок, лестниц и других
-      изделий и конструкций из металла</h1>
+    <main class="main">
+      <h1 class="visually-hidden">Производство и монтаж заборов, ворот, калиток, навесов, беседок, лестниц и других
+        изделий и конструкций из металла</h1>
 
-    <?php
+      <?php
             include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'catalog.html';
             include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'gallery.html';
             include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'about.html';
             include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'map.html';
           ?>
 
-  </main>
+    </main>
 
-  <?php
+    <?php
         include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'persinfo.html';
         include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'upbutton.html';
         include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'footer.html';
       ?>
+
+  </div>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
   <!--
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
