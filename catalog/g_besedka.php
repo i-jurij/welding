@@ -1,4 +1,4 @@
-    <div class="zabor-etapy" id="gbesedka">
+    <div class="zabor-etapy" id="g_besedka">
       <h2>Беседки, лавочки</h2>
       <div class="fotozena">
         <img src="catalog-imgs/besedka.webp" alt="Беседка">
@@ -6,7 +6,7 @@
           <span>Расценки на изготовление и монтаж беседок и лавочек</span>
                   <p> от
                     <?php
-                      echo $gbesedka;
+                      echo $g_besedka;
                     ?>
                     руб./м2
                   </p>

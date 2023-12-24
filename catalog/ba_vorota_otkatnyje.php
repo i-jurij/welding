@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="bavo">
+<div class="zabor-etapy" id="ba_vorota_otkatnyje">
   <h2>Ворота откатные</h2>
   <div class="fotozena">
     <img src="catalog-imgs/vorotao.jpg" alt="Ворота откатные">
@@ -6,7 +6,7 @@
       <span>Расценки под ключ:</span>
       <p> от
         <?php
-          echo $bavo;
+          echo $ba_vorota_otkatnyje;
         ?>
         руб.
       </p>

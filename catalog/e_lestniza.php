@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="elest">
+<div class="zabor-etapy" id="e_lestniza">
   <h2>Лестницы</h2>
   <div class="fotozena">
     <img src="catalog-imgs/lestniza.jpeg" alt="Лестница">

@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="zother">
+<div class="zabor-etapy" id="z_other">
   <h2>Прочие изделия</h2>
   <div class="fotozena">
     <img src="catalog-imgs/other.jpeg" alt="Металлоизделия">

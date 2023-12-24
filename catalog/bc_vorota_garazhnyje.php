@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="bcvg">
+<div class="zabor-etapy" id="bc_vorota_garazhnyje">
   <h2>Ворота гаражные</h2>
   <div class="fotozena">
     <img src="catalog-imgs/vorotag.webp" alt="Ворота гаражные">
@@ -6,7 +6,7 @@
       <span>Расценки под ключ:</span>
       <p> от
         <?php
-          echo $bcvg;
+          echo $bc_vorota_garazhnyje;
         ?>
         руб.
       </p>

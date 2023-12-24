@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="fnaves">
+<div class="zabor-etapy" id="f_naves">
   <h2>Навесы, козырьки</h2>
   <div class="fotozena">
     <img src="catalog-imgs/naves.jpeg" alt="Навес">

@@ -1,4 +1,4 @@
-<div class="zabor-etapy" id="cavtomat">
+<div class="zabor-etapy" id="c_avtomatika">
   <h2>Автоматика для ворот</h2>
   <div class="fotozena">
     <img src="catalog-imgs/vorotaavt.webp" alt="Автоматическая система управления воротами">
@@ -6,7 +6,7 @@
       <span>Расценки на автоматические системы управления воротами:</span>
       <p> от
         <?php
-          echo $cavtomat;
+          echo $c_avtomatika;
         ?>
         руб.
       </p>
