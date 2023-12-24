@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сварочные работы в Севастополе</title>
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="js/lightzoom/style.css" type="text/css">
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' 
+        && !empty($_POST['number'])
+        && isset($_POST['randcheck']) && isset($_SESSION['rand']) && $_POST['randcheck'] == $_SESSION['rand']) {
+      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'php_scripts' . DIRECTORY_SEPARATOR . 'send-form.php';
+      unset($_SESSION['rand']);
+    } else {
+      $rand = rand();
+      $_SESSION['rand'] = $rand;  
+      include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'form.html';
+    }
+
+    if (!empty($_COOKIE['status'])) {
+      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'send-form-message.html';
+      unset($_COOKIE['status'], $_COOKIE['result']);
+    }
+
+    include_once ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'header.html';    
+  ?>
+
+  <main class="main">
+    <h1 class="visually-hidden">Производство и монтаж заборов, ворот, калиток, навесов, беседок, лестниц и других
+      изделий и конструкций из металла</h1>
+
+    <?php
+            include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'catalog.html';
+            include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'gallery.html';
+            include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'about.html';
+            include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'map.html';
+          ?>
+
+  </main>
+
+  <?php
+        include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'persinfo.html';
+        include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'upbutton.html';
+        include ROOTDIR . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'footer.html';
+      ?>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+  <!--
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("jquery", "3.6.0");
+      google.setOnLoadCallback(jQueryIsLoaded);
+      function jQueryIsLoaded () {
+          alert('jQuery от Google загружен');
+      }
+      if (typeof jQuery == 'undefined') {
+          document.write(decodeURIComponent("%3Cscript src='/js/jquery-3.6.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+  </script>
+  -->
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/form-recall-mask.js"></script>
+
+</body>
+
+</html>
