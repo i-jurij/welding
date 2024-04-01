@@ -1,0 +1,11 @@
+# for xampp
+#RewriteBase /welding 
+
+#for ospanel
+RewriteBase /
+
+RewriteEngine On
+
+RewriteRule !.(js|css|ico|gif|jpg|jpeg|png|webp|svg|woff|woff2|ttf|otf)$ index.php [L]
+
+php_flag display_errors 1
