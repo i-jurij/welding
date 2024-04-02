@@ -7,7 +7,7 @@
     } else {
       $rand = rand();
       $_SESSION['rand'] = $rand;  
-      include ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'form.php';
+      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'form.php';
     }
 
     if (!empty($_COOKIE['status'])) {

@@ -1,5 +1,5 @@
 <?php
-    $directory = 'gallery';    // Папка с изображениями
+    $directory = 'imgs/gallery';    // Папка с изображениями
     $pattern2 = '#z*.(jpg|png|jpeg|webm*)#';
     $iterator = new FilesystemIterator($directory);
     $filter = new RegexIterator($iterator, $pattern2);

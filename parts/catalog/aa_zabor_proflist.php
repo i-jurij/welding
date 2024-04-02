@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>">
-  <h2>Забор из штакетника</h2>
+  <h2>Забор из профлиста</h2>
   <div class="fotozena">
-    <img src="catalog-imgs/stah.jpeg" alt="Забор из штакетника металлического">
+    <img src="imgs/catalog/profl.jpg" alt="Забор из профлиста">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от
@@ -27,8 +27,8 @@
     <li><span>Общая длина, сложность участка: </span>лес, рельеф, особенности грунта, наличие электричества, воды и прочее.</li>
     <li><span>Опоры:</span> высота, размер и толщина профиля.</li>
     <li><span>Лаги:</span> количество, размер и толщина профиля.</li>
-    <li><span>Штакетник:</span> длина листа, высота профиля, толщина листа, особенности покрытия.</li>
+    <li><span>Профлист:</span> высота листа, высота профиля, толщина листа, особенности покрытия.</li>
   </ol>
   </br>
-  <img src="catalog-imgs/shtahetnik.jpg" alt="Забор из металлического штакетника">
+  <img src="imgs/catalog/profl.png" alt="Забор из профлиста">
 </div>

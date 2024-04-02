@@ -1,14 +1,14 @@
 <div class="zabor-etapy" id="ba_vorota_otkatnyje">
   <h2>Ворота откатные</h2>
   <div class="fotozena">
-    <img src="catalog-imgs/vorotao.jpg" alt="Ворота откатные">
+    <img src="imgs/catalog/vorotao.jpg" alt="Ворота откатные">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от
         <?php
           echo $ba_vorota_otkatnyje;
         ?>
-        руб.
+        руб. / шт.
       </p>
     </div>
 </div>
@@ -28,5 +28,5 @@
     <li><span>Комплект фурнитуры: </span>подбирается под размеры ворот и балки.</li>
   </ol>
 </br>
-<img src="catalog-imgs/vorotaotk.jpg" alt="Ворота откатные">
+<img src="imgs/catalog/vorotaotk.jpg" alt="Ворота откатные">
 </div>

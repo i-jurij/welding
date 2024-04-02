@@ -1,9 +1,15 @@
 <div class="zabor-etapy" id="f_naves">
   <h2>Навесы, козырьки</h2>
   <div class="fotozena">
-    <img src="catalog-imgs/naves.jpeg" alt="Навес">
+    <img src="imgs/catalog/naves.jpeg" alt="Навес">
     <div class="zena">
-      <p><span>Расценки</span> на изготовление и монтаж навесов и козырьков под ключ <span>договорные.</span></p>
+      <span>Расценки под ключ:</span>
+      <p> от
+        <?php
+          echo $f_naves;
+        ?>
+        руб./м2
+      </p>
     </div>
 </div>
   <p>После согласования параметров навеса, стоимости и подписания договора приступаем к изготовлению и монтажу.</p>

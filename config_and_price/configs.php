@@ -10,8 +10,8 @@
 
     //contacts for header, footer
     $telegram = 'username';
-    $viber = '+7 978 044 31 43';
-    $mts = '+7 978 044 31 43';
+    $viber = '+7 999 111 22 33';
+    $mts = '+7 999 111 22 33';
     $volna = '+7 999 111 22 33';
 
     //gallery link 
@@ -19,11 +19,11 @@
 
     //emailing
     $smtp = 'smtp.yandex.ru';
-    $login = 'jurijlunjov';
+    $login = 'login';
     $password   = 'kfqthjbnrzdvosho';
     $secure = 'ssl';
     $port = 465;
-    $from_where = 'jurijlunjov@yandex.ru'; // Адрес почты, откуда отправляем
+    $from_where = 'fromhere@yandex.ru'; // Адрес почты, откуда отправляем
     $from_who = 'Welding site'; // имя отправителя
     // Получатель письма
-    $to_adress = 'yjurij@gmail.com';
+    $to_adress = 'toadress@gmail.com';

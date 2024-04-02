@@ -4,7 +4,7 @@
 
     <?php
 
-    $dir = __DIR__ . '/../catalog';
+    $dir = ROOTDIR . '/parts/catalog';
 
     $pattern1 = '/*.{php,html}';
     $files = array();

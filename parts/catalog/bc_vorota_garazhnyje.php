@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="bc_vorota_garazhnyje">
   <h2>Ворота гаражные</h2>
   <div class="fotozena">
-    <img src="catalog-imgs/vorotag.webp" alt="Ворота гаражные">
+    <img src="imgs/catalog/vorotag.webp" alt="Ворота гаражные">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от

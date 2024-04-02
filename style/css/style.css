@@ -170,14 +170,14 @@ h3 {
 	height: 9rem;
 	margin: 0 auto;
 	box-shadow: var(--shadowsection);
+
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
 }
 
 .contactsandlogo {
 	flex-grow: 1;
-}
-
-.contactsandlogo a {
-	text-decoration: none;
 }
 
 .contacts img {
@@ -865,7 +865,7 @@ tels a {
 		right: 0;
 	}
 
-	.nav li:hover>ul, 
+	.nav li:hover>ul,
 	.nav li:focus-within>ul,
 	.nav li ul:hover,
 	.nav li ul:focus {
@@ -879,7 +879,7 @@ tels a {
 		/* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 		float: none;
 	}
-	
+
 	.nav ul a {
 		white-space: nowrap;
 		/* Останавливаем перенос текста и создаем многострочный выпадающий пункт */

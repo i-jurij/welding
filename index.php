@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сварочные работы в Севастополе</title>
-  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="style/css/style.css" media="all">
   <link rel="stylesheet" href="js/lightzoom/style.css" type="text/css">
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
@@ -16,8 +16,8 @@
     session_start();
     define('ROOTDIR', __DIR__);
 
-    include_once ROOTDIR . DIRECTORY_SEPARATOR . 'configs' . DIRECTORY_SEPARATOR . 'configs.php';
-    include_once ROOTDIR . DIRECTORY_SEPARATOR . 'price' . DIRECTORY_SEPARATOR . 'price.php';
+    include_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'configs.php';
+    include_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'price.php';
     include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'post_logic.php';
     include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.php';
     ?>
@@ -30,7 +30,7 @@
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'catalog.php';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'gallery.php';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'about.html';
-      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'map.html';
+      // include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'map.html';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'persinfo.html';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'upbutton.html';
       ?>
