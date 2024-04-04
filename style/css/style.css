@@ -355,21 +355,21 @@ tels a {
 	vertical-align: top;
 	height: 5em;
 	width: 100%;
-	background-image: url(../imgs/send.png);
+	background-image: url(../../imgs/send.png);
 	background-position: 0.5rem 0.5rem;
 	background-repeat: no-repeat;
 	text-indent: 2.5rem;
 }
 
 .form-recall-main input#name {
-	background-image: url(../imgs/name.png);
+	background-image: url(../../imgs/name.png);
 	background-position: 0.5rem 0.5rem;
 	background-repeat: no-repeat;
 	text-indent: 2rem;
 }
 
 .form-recall-main input#number {
-	background-image: url(../imgs/tlf.png);
+	background-image: url(../../imgs/tlf.png);
 	background-position: 0.5rem 0.5rem;
 	background-repeat: no-repeat;
 	text-indent: 2rem;

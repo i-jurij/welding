@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="f_naves">
   <h2>Навесы, козырьки</h2>
   <div class="fotozena">
-    <img src="imgs/catalog/naves.jpeg" alt="Навес">
+    <img src="/imgs/catalog/naves.jpeg" alt="Навес">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от

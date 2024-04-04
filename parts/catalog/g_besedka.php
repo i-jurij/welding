@@ -1,7 +1,7 @@
     <div class="zabor-etapy" id="g_besedka">
       <h2>Беседки, лавочки</h2>
       <div class="fotozena">
-        <img src="imgs/catalog/besedka.webp" alt="Беседка">
+        <img src="/imgs/catalog/besedka.webp" alt="Беседка">
         <div class="zena">
           <span>Расценки на изготовление и монтаж беседок и лавочек</span>
                   <p> от

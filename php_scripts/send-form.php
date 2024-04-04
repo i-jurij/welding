@@ -5,6 +5,8 @@ $name = (!empty($_POST['name'])) ? trim(urldecode(htmlspecialchars($_POST['name'
 $number = (!empty($_POST['number'])) ? trim(urldecode(htmlspecialchars($_POST['number']))) : '';
 $send = (!empty($_POST['send'])) ? trim(urldecode(htmlspecialchars($_POST['send']))) : '';
 $mes = '';
+$tel_mts = preg_replace('/\s+/', '',$mts);
+$tel_volna = preg_replace('/\s+/', '',$volna);
 
 /*
 //// START work with db ////
@@ -82,45 +84,56 @@ $body = "
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();
-    $mail->CharSet = "UTF-8";
-    $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+  $mail->isSMTP();
+  $mail->CharSet = "UTF-8";
+  $mail->SMTPAuth   = true;
+  $mail->SMTPDebug = 2;
+  $mail->Debugoutput = function ($str, $level) {
+    $GLOBALS['status'][] = $str;
+  };
 
-    // Настройки вашей почты
-    $mail->Host       = $smtp; // SMTP сервера вашей почты
-    $mail->Username   = $login; // Логин на почте
-    $mail->Password   = $password; // Пароль на почте
-    $mail->SMTPSecure = $secure;
-    $mail->Port       = $port;
-    $mail->setFrom($from_where, $from_who); // Адрес самой почты и имя отправителя
+  // Настройки вашей почты
+  $mail->Host       = $smtp; // SMTP сервера вашей почты
+  $mail->Username   = $login; // Логин на почте
+  $mail->Password   = $password; // Пароль на почте
+  $mail->SMTPSecure = $secure;
+  $mail->Port       = $port;
+  $mail->setFrom($from_where, $from_who); // Адрес самой почты и имя отправителя
 
-    // Получатель письма
-    $mail->addAddress($to_adress);
-    //$mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
+  // Получатель письма
+  $mail->addAddress($to_adress);
+  //$mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
-    // Отправка сообщения
-    $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;
+  // Отправка сообщения
+  $mail->isHTML(true);
+  $mail->Subject = $title;
+  $mail->Body = $body;
 
-    // Проверяем отравленность сообщения
-    if ($mail->send()) {
-      $result = 'отправлен';
-      $status = " <b>Имя:</b> " . $name . "<br>
+  // Проверяем отравленность сообщения
+  if ($mail->send()) {
+    $result = 'отправлен';
+    $status = " <b>Имя:</b> " . $name . "<br>
                   <b>Телефон: </b>" . $number . "<br>
                   <b>Сообщение: </b><br>$send";
-    } else {
-      $result = "ошибка при отправке";
-    }
+  } else {
+    $result = "НЕ ОТПРАВЛЕН.";
+    $status = <<<EOT
+                {$mail->ErrorInfo}<br><br>
+                Позвоните нам, пожалуйста:<br>
+                <tels>
+                <a href="tel: $tel_mts "> $mts
+                </a>
+                <a href="tel: $tel_volna "> $volna
+                </a>
+              </tels>
+EOT;
+  }
 } catch (Exception $e) {
-    $result = 'не отправлен';
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+  $result = 'не отправлен.';
+  $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
 // Отображение результата
 // echo json_encode(["result" => $result, "status" => $status]);
 $_COOKIE['result'] = $result;
 $_COOKIE['status'] = $status;
-?>
