@@ -10,7 +10,7 @@
           <input type="text" placeholder="Ваше имя" name="name" id="name" maxlength="50"></input>
           <input type="tel" name="number" id="number" class="number" title="Формат: +7 999 999 99 99"
             placeholder="+7 ___ ___ __ __"
-            pattern="(\+?7|8)?\s?[\(]{0,1}?\d{3}[\)]{0,1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?\d{1}\s?[-]{0,1}?"
+            pattern="(\+?7|8)?\s?[\(]{0,1}?\d{3}[\)]{0,1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?\d{1}\s?[\-]{0,1}?"
             required></input>
           <div id="error"><small></small></div>
           <textarea placeholder="Ваше сообщение" name="send" id="send" maxlength="300"></textarea>
