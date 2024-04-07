@@ -15,12 +15,15 @@
     <?php
     session_start();
     define('ROOTDIR', __DIR__);
+    require_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'configs.php';
 
     if (
-      $_SERVER['REQUEST_URI'] === '/recall') { ?>
-      recall
+      $_SERVER['REQUEST_URI'] === '/recall'
+    ) { ?>
+      <?php
+      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'recall.php';
+      ?>
     <?php } else {
-      include_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'configs.php';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'price.php';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'post_logic.php';
       include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'header.php';

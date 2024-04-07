@@ -9,7 +9,7 @@
             </p>
             <p id="for_button_insert"></p>
             <noscript>
-                <p style="padding: 1rem 0 1rem 0; margin-top:1rem;"><a href='<?php echo URLROOT; ?>' class="buttons">Закрыть</a></p>
+                <p style="padding: 1rem 0 1rem 0; margin-top:1rem;"><a href='/' class="buttons">Закрыть</a></p>
             </noscript>
         </div>
 

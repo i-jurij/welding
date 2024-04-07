@@ -118,7 +118,7 @@ try {
   } else {
     $result = "НЕ ОТПРАВЛЕН.";
     $status = <<<EOT
-                {$mail->ErrorInfo}<br><br>
+                Ошибки сервера.<br><br>
                 Позвоните нам, пожалуйста:<br>
                 <tels>
                 <a href="tel: $tel_mts "> $mts

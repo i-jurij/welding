@@ -26,7 +26,7 @@
 
     </div>
 
-    <a class="logo" href="#"><img src="/imgs/logo21.png" alt="Логотип" /> <img src="/imgs/logo12.png" /></a>
+    <a class="logo" href="/"><img src="/imgs/logo21.png" alt="Логотип" /> <img src="/imgs/logo12.png" /></a>
 
   </div>
 
