@@ -17,8 +17,8 @@ function countPost($remote_ip)
         } else {
             $_SESSION[$remote_ip] = ['count' => 0, 'time' => time()];
         }
+        return $_SESSION[$remote_ip];
     }
-    return $_SESSION[$remote_ip];
 }
 /**
  * function for trottle prevent
