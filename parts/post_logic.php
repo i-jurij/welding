@@ -3,7 +3,7 @@ require_once ROOTDIR . DIRECTORY_SEPARATOR . 'php_scripts' . DIRECTORY_SEPARATOR
 
 countPost($remote_ip);
 
-if (!preventTrottle($_SESSION[$remote_ip])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !preventTrottle($_SESSION[$remote_ip])) {
   include_once ROOTDIR . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR . 'trottle_message.php';
 } else {
   if (
