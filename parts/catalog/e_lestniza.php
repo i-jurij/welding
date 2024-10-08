@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="e_lestniza">
   <h2>Лестницы</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/lestniza.jpeg" alt="Лестница">
+    <img src="imgs/catalog/lestniza.jpeg" alt="Лестница">
     <div class="zena">
       <p><span>Расценки</span> на изготовление и монтаж лестниц под ключ <span>договорные.</span></p>
     </div>

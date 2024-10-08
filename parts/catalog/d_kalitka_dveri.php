@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="d_kalitka_dveri">
   <h2>Калитки, двери</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/kalitka.jpg" alt="Калитка">
+    <img src="imgs/catalog/kalitka.jpg" alt="Калитка">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от

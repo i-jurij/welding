@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="bb_vorota_raspashnyje">
   <h2>Ворота распашные</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/vorotar.webp" alt="Ворота распашные">
+    <img src="imgs/catalog/vorotar.webp" alt="Ворота распашные">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от

@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>">
   <h2>Забор из штакетника</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/stah.jpeg" alt="Забор из штакетника металлического">
+    <img src="imgs/catalog/stah.jpeg" alt="Забор из штакетника металлического">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от
@@ -30,5 +30,5 @@
     <li><span>Штакетник:</span> длина листа, высота профиля, толщина листа, особенности покрытия.</li>
   </ol>
   </br>
-  <img src="/imgs/catalog/shtahetnik.jpg" alt="Забор из металлического штакетника">
+  <img src="imgs/catalog/shtahetnik.jpg" alt="Забор из металлического штакетника">
 </div>

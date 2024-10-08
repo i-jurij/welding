@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>">
   <h2>Забор секционный</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/sekz.jpg" alt="Забор из металлических секций">
+    <img src="imgs/catalog/sekz.jpg" alt="Забор из металлических секций">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от

@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="c_avtomatika">
   <h2>Автоматика для ворот</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/vorotaavt.webp" alt="Автоматическая система управления воротами">
+    <img src="imgs/catalog/vorotaavt.webp" alt="Автоматическая система управления воротами">
     <div class="zena">
       <span>Расценки на автоматические системы управления воротами:</span>
       <p> от

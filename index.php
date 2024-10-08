@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сварочные работы в Севастополе</title>
-  <link rel="stylesheet" href="/style/css/style.css" media="all">
-  <link rel="stylesheet" href="/js/lightzoom/style.css" type="text/css">
-  <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style/css/style.css" media="all">
+  <link rel="stylesheet" href="js/lightzoom/style.css" type="text/css">
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
     session_start();
     define('ROOTDIR', __DIR__);
     require_once ROOTDIR . DIRECTORY_SEPARATOR . 'config_and_price' . DIRECTORY_SEPARATOR . 'configs.php';
+
 
     if (
       $_SERVER['REQUEST_URI'] === '/recall'
@@ -49,8 +50,8 @@
     }
     ?>
   </div>
-  <script src="/js/jquery.maskedinput.min.js"></script>
-  <script src="/js/form-recall-mask.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/form-recall-mask.js"></script>
 
 </body>
 

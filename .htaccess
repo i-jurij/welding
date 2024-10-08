@@ -1,8 +1,8 @@
 # for xampp
-#RewriteBase /welding 
+RewriteBase /welding
 
 #for ospanel
-RewriteBase /
+#RewriteBase /
 
 RewriteEngine On
 

@@ -6,9 +6,9 @@
 
       <div class="soztels flex">
         <soz>
-          <a href="tg://resolve?domain=<?php echo $telegram; ?>"><img src="/imgs/Telegram.svg" alt="Telegram"></img></a>
+          <a href="tg://resolve?domain=<?php echo $telegram; ?>"><img src="imgs/Telegram.svg" alt="Telegram"></img></a>
           <a href="viber://chat?number=%2B<?php $vibe = str_replace(' ', '', $viber);
-                                          echo trim($vibe, " +"); ?>"><img src="/imgs/Viber.png" alt="Viber"></img></a>
+                                          echo trim($vibe, " +"); ?>"><img src="imgs/Viber.png" alt="Viber"></img></a>
         </soz>
 
         <tels>
@@ -26,7 +26,7 @@
 
     </div>
 
-    <a class="logo" href="/"><img src="/imgs/logo21.png" alt="Логотип" /> <img src="/imgs/logo12.png" /></a>
+    <a class="logo" href=""><img src="imgs/logo21.png" alt="Логотип" /> <img src="imgs/logo12.png" /></a>
 
   </div>
 
@@ -42,7 +42,7 @@
     <!-- Выпадающее меню, стили его покажут при меньшем media screen -->
     <ul class="nav">
       <li>
-        <a href="#" aria-haspopup="true"><img src="/imgs/menu.png" srcset="/imgs/menu.svg" alt="Меню" height="48px" width="48px" /></a>
+        <a href="#" aria-haspopup="true"><img src="imgs/menu.png" srcset="imgs/menu.svg" alt="Меню" height="48px" width="48px" /></a>
         <ul class="dropdown" aria-label="submenu">
           <li>
             <a href="#katalog">Каталог</a>

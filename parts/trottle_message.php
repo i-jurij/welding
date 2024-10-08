@@ -1,9 +1,8 @@
 <div class="flex modal_visible" id="trottle_message">
     <div>
-      <div class="form-recall-main">
-        <p>Вы отправили данные из формы три раза. <br>
-          Если запрос был отправлен - мы обязательно вам перезвоним. <br>
-          Если возникли ошибки на сервере - позвоните нам или попробуйте отправить запрос позже.
+      <div class="form-recall-main">    
+        <p>Вы уже отправили данные из формы. <br>
+          Мы обязательно вам перезвоним. <br>
         </p>
         <p id="for_button_close_insert"></p>
         <noscript>

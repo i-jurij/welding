@@ -1,7 +1,7 @@
 <div class="zabor-etapy" id="<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>">
   <h2>Забор из профлиста</h2>
   <div class="fotozena">
-    <img src="/imgs/catalog/profl.jpg" alt="Забор из профлиста">
+    <img src="imgs/catalog/profl.jpg" alt="Забор из профлиста">
     <div class="zena">
       <span>Расценки под ключ:</span>
       <p> от
@@ -30,5 +30,5 @@
     <li><span>Профлист:</span> высота листа, высота профиля, толщина листа, особенности покрытия.</li>
   </ol>
   </br>
-  <img src="/imgs/catalog/profl.png" alt="Забор из профлиста">
+  <img src="imgs/catalog/profl.png" alt="Забор из профлиста">
 </div>
